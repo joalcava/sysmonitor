@@ -33,7 +33,7 @@
             this.DescriptionLabel = new System.Windows.Forms.Label();
             this.GetDataBtn = new System.Windows.Forms.Button();
             this.LangBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DataLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // DescriptionLabel
@@ -55,22 +55,21 @@
             this.LangBtn.UseVisualStyleBackColor = true;
             this.LangBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // DataLbl
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.DataLbl, "DataLbl");
+            this.DataLbl.Name = "DataLbl";
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DataLbl);
             this.Controls.Add(this.LangBtn);
             this.Controls.Add(this.GetDataBtn);
             this.Controls.Add(this.DescriptionLabel);
             this.Name = "MainForm";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -81,6 +80,6 @@
         #endregion
 
         private System.Windows.Forms.Button LangBtn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DataLbl;
     }
 }

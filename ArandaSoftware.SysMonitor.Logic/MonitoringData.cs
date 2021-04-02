@@ -6,22 +6,24 @@ namespace ArandaSoftware.SysMonitor.Logic
     {
         public MonitoringData()
         {
-            Date = DateTimeOffset.Now;
+            DateCreated = DateTimeOffset.Now;
         }
+
+        public long Id { get; set; }
 
         public string OsName { get; set; }
         public string HostName { get; set; }
         public string IpAddress { get; set; }
 
-        public long DiskCapacity { get; set; }
-        public long DiskUsage { get; set; }
+        public double DiskCapacity { get; set; }
+        public double DiskUsage { get; set; }
 
-        public long RamCapacity { get; set; }
-        public long RamUsage { get; set; }
+        public double RamCapacity { get; set; }
+        public double RamUsage { get; set; }
 
         public string CpuName { get; set; }
-        public long CpuUsage { get; set; }
+        public double CpuUsage { get; set; }
 
-        public readonly DateTimeOffset Date;
+        public readonly DateTimeOffset DateCreated;
     }
 }

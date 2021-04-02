@@ -123,4 +123,28 @@
   <data name="LangBtn.Text" xml:space="preserve">
     <value>ES</value>
   </data>
+  <data name="GetDataBtn.Text" xml:space="preserve">
+    <value>Get data</value>
+  </data>
+  <data name="CPU" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Report date</value>
+  </data>
+  <data name="Disk" xml:space="preserve">
+    <value>Hard Disk</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+    <value>IP Address</value>
+  </data>
+  <data name="MachineName" xml:space="preserve">
+    <value>Machine Name</value>
+  </data>
+  <data name="OperativeSystem" xml:space="preserve">
+    <value>Operative System</value>
+  </data>
+  <data name="Ram" xml:space="preserve">
+    <value>RAM</value>
+  </data>
 </root>

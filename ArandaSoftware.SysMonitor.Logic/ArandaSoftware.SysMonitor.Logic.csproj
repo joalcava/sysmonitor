@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <ProjectGuid>811f96e3-46d0-444b-9002-2d3b89f178bd</ProjectGuid>
+    <LangVersion>7</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1" />
+  </ItemGroup>
 
 </Project>

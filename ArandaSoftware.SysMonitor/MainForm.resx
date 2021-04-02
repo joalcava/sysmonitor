@@ -58,122 +58,137 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GetDataBtn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>94, 23</value>
+  <data name="DescriptionLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 9</value>
   </data>
-  <data name="&gt;&gt;GetDataBtn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;LangBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="DescriptionLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>560, 56</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
   <data name="DescriptionLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>584, 461</value>
-  </data>
-  <data name="LangBtn.Text" xml:space="preserve">
-    <value>EN</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>38, 15</value>
-  </data>
-  <data name="GetDataBtn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 52</value>
-  </data>
-  <data name="&gt;&gt;LangBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DescriptionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="GetDataBtn.Text" xml:space="preserve">
-    <value>Get data</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="GetDataBtn.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;GetDataBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="LangBtn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>66, 23</value>
+  <data name="DescriptionLabel.Text" xml:space="preserve">
+    <value>This application allows you to capture the relevant information of the current computer (operating system, machine name, IP address, hard disk, RAM and processor)</value>
   </data>
   <data name="&gt;&gt;DescriptionLabel.Name" xml:space="preserve">
     <value>DescriptionLabel</value>
   </data>
-  <data name="DescriptionLabel.Text" xml:space="preserve">
-    <value>This application allows you to capture the relevant information of the current computer (operating system, machine name, IP address, hard disk, RAM and processor)</value>
+  <data name="&gt;&gt;DescriptionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DescriptionLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DescriptionLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 9</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="DescriptionLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>560, 56</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GetDataBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
-    <value>7, 15</value>
-  </data>
-  <data name="LangBtn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>506, 426</value>
-  </data>
-  <data name="LangBtn.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>12, 89</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;LangBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;LangBtn.Name" xml:space="preserve">
-    <value>LangBtn</value>
-  </data>
   <data name="&gt;&gt;DescriptionLabel.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="GetDataBtn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 52</value>
+  </data>
+  <data name="GetDataBtn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>94, 23</value>
+  </data>
+  <data name="GetDataBtn.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="GetDataBtn.Text" xml:space="preserve">
+    <value>Get data</value>
   </data>
   <data name="&gt;&gt;GetDataBtn.Name" xml:space="preserve">
     <value>GetDataBtn</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;GetDataBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GetDataBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GetDataBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LangBtn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>506, 426</value>
+  </data>
+  <data name="LangBtn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>66, 23</value>
+  </data>
+  <data name="LangBtn.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="LangBtn.Text" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="&gt;&gt;LangBtn.Name" xml:space="preserve">
+    <value>LangBtn</value>
+  </data>
+  <data name="&gt;&gt;LangBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LangBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LangBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DataLbl.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 87</value>
+  </data>
+  <data name="DataLbl.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>560, 323</value>
+  </data>
+  <data name="DataLbl.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="DataLbl.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;DataLbl.Name" xml:space="preserve">
+    <value>DataLbl</value>
+  </data>
+  <data name="&gt;&gt;DataLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DataLbl.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>es</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>584, 461</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CPU" xml:space="preserve">
+      <value>CPU</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+      <value>Fecha de reporte</value>
+  </data>
+  <data name="Disk" xml:space="preserve">
+      <value>Disco duro</value>
+  </data>
+  <data name="IpAddress" xml:space="preserve">
+      <value>Direccion IP</value>
+  </data>
+  <data name="MachineName" xml:space="preserve">
+      <value>Nombre de la maquina</value>
+  </data>
+  <data name="OperativeSystem" xml:space="preserve">
+      <value>Sistema Operativo</value>
+  </data>
+  <data name="Ram" xml:space="preserve">
+      <value>RAM</value>
+  </data>
 </root>
