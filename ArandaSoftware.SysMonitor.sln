@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArandaSoftware.SysMonitor", "ArandaSoftware.SysMonitor\ArandaSoftware.SysMonitor.csproj", "{61CFDD39-C398-4676-8400-748459D2F24A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{269D0A25-9FBC-4DD6-A9A1-8672DEE4DC0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArandaSoftware.SysMonitor.Logic", "ArandaSoftware.SysMonitor.Logic\ArandaSoftware.SysMonitor.Logic.csproj", "{AE4D07E5-A82D-42BC-8925-B1D17FB41E4B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A97DE0E9-BA8D-4468-AC04-90E102F7543B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysMonitor.UnitTests", "test\SysMonitor.UnitTests\SysMonitor.UnitTests.csproj", "{344AB31C-BDF4-4AD8-A20C-546C37539487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysMonitor.Console", "src\SysMonitor.Console\SysMonitor.Console.csproj", "{D5665CE0-ABCF-4C95-A570-FBD281AA3A31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysMonitor.Logic", "src\SysMonitor.Logic\SysMonitor.Logic.csproj", "{811F96E3-46D0-444B-9002-2D3B89F178BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysMonitor.WinForms", "src\SysMonitor.WinForms\SysMonitor.WinForms.csproj", "{FCDBE569-0AFC-474F-B5DD-08896707A2E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +21,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{61CFDD39-C398-4676-8400-748459D2F24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61CFDD39-C398-4676-8400-748459D2F24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61CFDD39-C398-4676-8400-748459D2F24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61CFDD39-C398-4676-8400-748459D2F24A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE4D07E5-A82D-42BC-8925-B1D17FB41E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE4D07E5-A82D-42BC-8925-B1D17FB41E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE4D07E5-A82D-42BC-8925-B1D17FB41E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE4D07E5-A82D-42BC-8925-B1D17FB41E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344AB31C-BDF4-4AD8-A20C-546C37539487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344AB31C-BDF4-4AD8-A20C-546C37539487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344AB31C-BDF4-4AD8-A20C-546C37539487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344AB31C-BDF4-4AD8-A20C-546C37539487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5665CE0-ABCF-4C95-A570-FBD281AA3A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5665CE0-ABCF-4C95-A570-FBD281AA3A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5665CE0-ABCF-4C95-A570-FBD281AA3A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5665CE0-ABCF-4C95-A570-FBD281AA3A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811F96E3-46D0-444B-9002-2D3B89F178BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811F96E3-46D0-444B-9002-2D3B89F178BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811F96E3-46D0-444B-9002-2D3B89F178BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811F96E3-46D0-444B-9002-2D3B89F178BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDBE569-0AFC-474F-B5DD-08896707A2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDBE569-0AFC-474F-B5DD-08896707A2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDBE569-0AFC-474F-B5DD-08896707A2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDBE569-0AFC-474F-B5DD-08896707A2E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90D5B9D5-3E9A-44EE-BF11-4B350AC48C6E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{344AB31C-BDF4-4AD8-A20C-546C37539487} = {A97DE0E9-BA8D-4468-AC04-90E102F7543B}
+		{D5665CE0-ABCF-4C95-A570-FBD281AA3A31} = {269D0A25-9FBC-4DD6-A9A1-8672DEE4DC0C}
+		{811F96E3-46D0-444B-9002-2D3B89F178BD} = {269D0A25-9FBC-4DD6-A9A1-8672DEE4DC0C}
+		{FCDBE569-0AFC-474F-B5DD-08896707A2E2} = {269D0A25-9FBC-4DD6-A9A1-8672DEE4DC0C}
 	EndGlobalSection
 EndGlobal
