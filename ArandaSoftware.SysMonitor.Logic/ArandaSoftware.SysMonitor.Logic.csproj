@@ -15,12 +15,12 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4" />
         <!--    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4">-->
         <!--      <PrivateAssets>all</PrivateAssets>-->
         <!--      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>-->
         <!--    </PackageReference>-->
-        <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1"/>
+        <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="5.0.1" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,4 +1,6 @@
-﻿namespace ArandaSoftware.SysMonitor.Logic
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace ArandaSoftware.SysMonitor.Logic
 {
     public class SystemMonitor
     {
@@ -20,7 +22,7 @@
 
                 DiskCapacity = dataReader.GetDiskCapacity(),
                 DiskUsage = dataReader.GetDiskUsage(),
-    
+
                 RamCapacity = dataReader.GetRamCapacity(),
                 RamUsage = dataReader.GetRamUsage(),
 
@@ -30,7 +32,7 @@
 
             LastRead = monitoringData;
             PersistData(monitoringData);
-            
+
             return monitoringData;
         }
 
@@ -38,6 +40,9 @@
         {
             using (var context = new SysMonitorDbContext())
             {
+                // TODO: This should not be here
+                context.Database.Migrate();
+
                 context.MonitoringData.Add(data);
                 context.SaveChanges();
             }
