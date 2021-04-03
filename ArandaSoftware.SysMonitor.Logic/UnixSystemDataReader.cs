@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading;
 
@@ -33,9 +34,19 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         #region Disk
 
-        public double GetDiskCapacity() => 0;
+        public double GetDiskCapacity()
+        {
+            var drivers = DriveInfo.GetDrives();
+            return drivers.First().TotalSize / 1024.0 / 1024 / 1024;
+        }
 
-        public double GetDiskUsage() => 0;
+        public double GetDiskUsage()
+        {
+            var drivers = DriveInfo.GetDrives();
+            var capacity = drivers.First().TotalSize / 1024.0 / 1024 / 1024;
+            var available = drivers.First().AvailableFreeSpace / 1024.0 / 1024 / 1024;
+            return capacity - available;
+        }
 
         #endregion
 
@@ -51,11 +62,11 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public double GetRamUsage()
         {
-            var valueBytes = new PerformanceCounter("Mono Memory", "Available Physical Memory")
-                .RawValue;
-            Console.WriteLine(valueBytes);
-
-            return valueBytes / 1024.0 / 1024.0;
+            var capacity = GetRamCapacity();
+            var valueBytes = new PerformanceCounter(
+                "Mono Memory", "Available Physical Memory").RawValue;
+            
+            return capacity - (valueBytes / 1024.0 / 1024.0);
         }
 
         #endregion
@@ -64,6 +75,17 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public string GetCpuName()
         {
+            var cat = PerformanceCounterCategory.GetCategories();
+            foreach (var category in cat)
+            {
+                Console.WriteLine(category.CategoryName); 
+                var counters = category.GetCounters();
+                foreach (var counter in counters)
+                {
+                    Console.WriteLine(counter.CounterName); 
+                }
+            }
+            
             return string.Empty;
         }
 
