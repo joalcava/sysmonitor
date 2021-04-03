@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ArandaSoftware.SysMonitor.Logic
+﻿namespace ArandaSoftware.SysMonitor.Logic
 {
     public class SystemMonitor
     {
@@ -35,7 +29,18 @@ namespace ArandaSoftware.SysMonitor.Logic
             };
 
             LastRead = monitoringData;
+            PersistData(monitoringData);
+            
             return monitoringData;
+        }
+
+        private void PersistData(MonitoringData data)
+        {
+            using (var context = new SysMonitorDbContext())
+            {
+                context.MonitoringData.Add(data);
+                context.SaveChanges();
+            }
         }
 
     }

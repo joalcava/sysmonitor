@@ -60,13 +60,15 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public string GetCpuName()
         {
+            #if _WINDOWS
             var key = Registry.LocalMachine.OpenSubKey(@"HARDWARE\DESCRIPTION\System\CentralProcessor\0\");
-
+            
             var processorName = key?.GetValue("ProcessorNameString");
             if (processorName != null)
             {
                 return processorName.ToString()?.Trim() ?? string.Empty;
             }
+            #endif
 
             return string.Empty;
         }
