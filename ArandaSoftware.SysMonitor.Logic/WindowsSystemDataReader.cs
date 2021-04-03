@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -15,12 +16,14 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public double GetDiskCapacity()
         {
-            return 0;
+            var drivers = DriveInfo.GetDrives();
+            return drivers.First().TotalSize / 1024.0 / 1024 / 1024;
         }
 
         public double GetDiskUsage()
         {
-            return 0;
+            var drivers = DriveInfo.GetDrives();
+            return drivers.First().AvailableFreeSpace / 1024.0 / 1024 / 1024;
         }
 
         #endregion
