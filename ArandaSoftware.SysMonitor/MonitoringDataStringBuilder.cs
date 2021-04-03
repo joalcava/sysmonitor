@@ -34,7 +34,7 @@ namespace ArandaSoftware.SysMonitor
                 .AppendJoin(" ", ":", data.RamCapacity, "MB", "/", ramUsagePercentage.ToString("0.##"), "%")
                 .AppendLine()
                 .AppendJoin(" ", BulletChar, "CPU")
-                .AppendJoin(" ", ":", data.CpuName, "/", data.CpuUsage)
+                .AppendJoin(" ", ":", data.CpuName, "/", data.CpuUsage.ToString("0.##"), "%")
                 .AppendLine()
                 .AppendJoin(" ", BulletChar, "Report Date")
                 .AppendJoin(" ", ":", data.DateCreated)

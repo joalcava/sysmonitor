@@ -21,6 +21,6 @@ namespace ArandaSoftware.SysMonitor.Logic
         double GetRamUsage();
 
         string GetCpuName();
-        double GetCpuUsage();
+        float GetCpuUsage();
     }
 }

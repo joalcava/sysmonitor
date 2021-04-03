@@ -56,9 +56,12 @@ namespace ArandaSoftware.SysMonitor.Logic
             return string.Empty;
         }
 
-        public double GetCpuUsage()
+        public float GetCpuUsage()
         {
-            return 0;
+            var cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
+            cpuCounter.NextValue();
+            Thread.Sleep(500);
+            return cpuCounter.NextValue();
         }
 
         #endregion
@@ -82,7 +85,7 @@ namespace ArandaSoftware.SysMonitor.Logic
         public string GetOsName()
         {
             return Environment.OSVersion.ToString();
-        } 
+        }
 
         #endregion
     }

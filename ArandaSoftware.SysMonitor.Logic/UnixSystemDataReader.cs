@@ -13,7 +13,7 @@ namespace ArandaSoftware.SysMonitor.Logic
         {
             return Environment.MachineName;
         }
-        
+
         public string GetIpAddress()
         {
             var addresses = System.Net.Dns.GetHostAddresses(GetHostName());
@@ -26,7 +26,7 @@ namespace ArandaSoftware.SysMonitor.Logic
         public string GetOsName()
         {
             return Environment.OSVersion.ToString();
-        } 
+        }
 
         #endregion
 
@@ -51,7 +51,7 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public string GetCpuName() => string.Empty;
 
-        public double GetCpuUsage() => 0;
+        public float GetCpuUsage() => 0;
 
         #endregion
     }
