@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace ArandaSoftware.SysMonitor
         {
             //var resources = new ComponentResourceManager(typeof(MainForm));
             var ramUsagePercentage = (data.RamUsage / data.RamCapacity) * 100;
+            var diskUsagePercentage = (data.DiskUsage / data.DiskCapacity) * 100;
 
             var stringBuilder = new StringBuilder()
                 .AppendJoin(" ", BulletChar, "Operative System")
@@ -28,7 +30,7 @@ namespace ArandaSoftware.SysMonitor
                 .AppendJoin(" ", ":", data.IpAddress)
                 .AppendLine()
                 .AppendJoin(" ", BulletChar, "Hard Disk")
-                .AppendJoin(" ", ":", data.DiskCapacity, "/", data.DiskUsage)
+                .AppendJoin(" ", ":", data.DiskCapacity.ToString("0.##"), "GB", "/", diskUsagePercentage.ToString("0.##"), "%")
                 .AppendLine()
                 .AppendJoin(" ", BulletChar, "RAM")
                 .AppendJoin(" ", ":", data.RamCapacity, "MB", "/", ramUsagePercentage.ToString("0.##"), "%")
