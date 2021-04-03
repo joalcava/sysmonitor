@@ -65,7 +65,7 @@ namespace ArandaSoftware.SysMonitor.Logic
             var capacity = GetRamCapacity();
             var valueBytes = new PerformanceCounter(
                 "Mono Memory", "Available Physical Memory").RawValue;
-            
+
             return capacity - (valueBytes / 1024.0 / 1024.0);
         }
 
@@ -75,18 +75,10 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public string GetCpuName()
         {
-            var cat = PerformanceCounterCategory.GetCategories();
-            foreach (var category in cat)
-            {
-                Console.WriteLine(category.CategoryName); 
-                var counters = category.GetCounters();
-                foreach (var counter in counters)
-                {
-                    Console.WriteLine(counter.CounterName); 
-                }
-            }
-            
-            return string.Empty;
+            var cpuInfoReader = new UnixCpuInfo();
+            cpuInfoReader.LoadValues();
+
+            return cpuInfoReader.ModelName ?? string.Empty;
         }
 
         public float GetCpuUsage()

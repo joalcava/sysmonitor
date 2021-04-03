@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Win32;
 
 namespace ArandaSoftware.SysMonitor.Logic
 {
@@ -23,7 +24,9 @@ namespace ArandaSoftware.SysMonitor.Logic
         public double GetDiskUsage()
         {
             var drivers = DriveInfo.GetDrives();
-            return drivers.First().AvailableFreeSpace / 1024.0 / 1024 / 1024;
+            var capacity = drivers.First().TotalSize / 1024.0 / 1024 / 1024;
+            var available = drivers.First().AvailableFreeSpace / 1024.0 / 1024 / 1024;
+            return capacity - available;
         }
 
         #endregion
@@ -44,10 +47,11 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public double GetRamUsage()
         {
+            var capacity = GetRamCapacity();
             var availablePhysicalMemory = new PerformanceCounter(
                 "Memory", "Available MBytes").RawValue;
 
-            return availablePhysicalMemory;
+            return capacity - availablePhysicalMemory;
         }
 
         #endregion
@@ -56,10 +60,19 @@ namespace ArandaSoftware.SysMonitor.Logic
 
         public string GetCpuName()
         {
+            var key = Registry.LocalMachine.OpenSubKey(@"HARDWARE\DESCRIPTION\System\CentralProcessor\0\");
+
+            var processorName = key?.GetValue("ProcessorNameString");
+            if (processorName != null)
+            {
+                return processorName.ToString()?.Trim() ?? string.Empty;
+            }
+
             return string.Empty;
         }
 
-        public float GetCpuUsage()
+
+    public float GetCpuUsage()
         {
             var cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
             cpuCounter.NextValue();
