@@ -78,7 +78,7 @@ namespace SysMonitor.Logic
         {
             var cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
             cpuCounter.NextValue();
-            Thread.Sleep(500);
+            Thread.Sleep(100);
             return cpuCounter.NextValue();
         }
 
