@@ -39,4 +39,7 @@
   <data name="MachineName"><value>Nombre de la maquina</value></data>
   <data name="OperativeSystem"><value>Sistema Operativo</value></data>
   <data name="Ram"><value>RAM</value></data>
-  </root>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Exportar datos</value>
+  </data>
+</root>

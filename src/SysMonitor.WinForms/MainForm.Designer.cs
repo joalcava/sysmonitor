@@ -34,6 +34,8 @@
             this.GetDataBtn = new System.Windows.Forms.Button();
             this.LangBtn = new System.Windows.Forms.Button();
             this.DataLbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ExportResultLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // DescriptionLabel
@@ -60,10 +62,24 @@
             resources.ApplyResources(this.DataLbl, "DataLbl");
             this.DataLbl.Name = "DataLbl";
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // ExportResultLbl
+            // 
+            resources.ApplyResources(this.ExportResultLbl, "ExportResultLbl");
+            this.ExportResultLbl.Name = "ExportResultLbl";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ExportResultLbl);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.DataLbl);
             this.Controls.Add(this.LangBtn);
             this.Controls.Add(this.GetDataBtn);
@@ -71,6 +87,10 @@
             this.Name = "MainForm";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label ExportResultLbl;
+
+        private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.Button GetDataBtn;
 

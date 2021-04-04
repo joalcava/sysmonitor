@@ -147,4 +147,7 @@
   <data name="Ram" xml:space="preserve">
     <value>RAM</value>
   </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Export data</value>
+  </data>
 </root>

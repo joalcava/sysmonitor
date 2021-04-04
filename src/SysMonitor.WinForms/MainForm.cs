@@ -71,5 +71,11 @@ namespace SysMonitor.WinForms
             var dataLabel = MonitoringDataStringBuilder.Build(data);
             this.DataLbl.Text = dataLabel;
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var location = SystemMonitor.ExportData();
+            ExportResultLbl.Text = location;
+        }
     }
 }
