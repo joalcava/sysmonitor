@@ -46,12 +46,22 @@ namespace SysMonitor.WinForms
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
                 this.Controls.Clear();
                 InitializeComponent();
+                SetPrevData();
             }
             else if (currentCultureName.StartsWith("en"))
             {
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
                 this.Controls.Clear();
                 InitializeComponent();
+                SetPrevData();
+            }
+        }
+
+        public void SetPrevData()
+        {
+            if (this.SystemMonitor.LastRead != null)
+            {
+                this.DataLbl.Text = MonitoringDataStringBuilder.Build(SystemMonitor.LastRead);
             }
         }
 

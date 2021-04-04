@@ -28,41 +28,10 @@
     </xsd:element>
   </xsd:schema>
 <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value></resheader><data name="DescriptionLabel.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>12, 9</value></data>
-  <data name="DescriptionLabel.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>560, 56</value></data>
-  <data name="DescriptionLabel.TabIndex" type="System.Resources.ResXNullRef, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null"><value /></data>
-  <data name="DescriptionLabel.Text"><value>This application allows you to capture the relevant information of the current computer (operating system, machine name, IP address, hard disk, RAM and processor)</value></data>
-  <data name="&gt;&gt;DescriptionLabel.Name"><value>DescriptionLabel</value></data>
-  <data name="&gt;&gt;DescriptionLabel.Type"><value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
-  <data name="&gt;&gt;DescriptionLabel.Parent"><value>$this</value></data>
-  <data name="&gt;&gt;DescriptionLabel.ZOrder"><value>3</value></data>
-  <data name="GetDataBtn.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>12, 52</value></data>
-  <data name="GetDataBtn.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>94, 23</value></data>
-  <data name="GetDataBtn.TabIndex" type="System.Resources.ResXNullRef, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null"><value /></data>
-  <data name="GetDataBtn.Text"><value>Get data</value></data>
-  <data name="&gt;&gt;GetDataBtn.Name"><value>GetDataBtn</value></data>
-  <data name="&gt;&gt;GetDataBtn.Type"><value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
-  <data name="&gt;&gt;GetDataBtn.Parent"><value>$this</value></data>
-  <data name="&gt;&gt;GetDataBtn.ZOrder"><value>2</value></data>
-  <data name="LangBtn.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>506, 426</value></data>
-  <data name="LangBtn.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>66, 23</value></data>
-  <data name="LangBtn.TabIndex" type="System.Resources.ResXNullRef, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null"><value /></data>
+  <data name="DescriptionLabel.Text"><value>El presente aplicativo permite capturar la informacion relevante del equipo actual (sistema operativo, nombre de la maquina, direccion IP, disco duro, ram y procesador)</value></data>
+  <data name="GetDataBtn.Text"><value>Obtener datos</value></data>
   <data name="LangBtn.Text"><value>EN</value></data>
-  <data name="&gt;&gt;LangBtn.Name"><value>LangBtn</value></data>
-  <data name="&gt;&gt;LangBtn.Type"><value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
-  <data name="&gt;&gt;LangBtn.Parent"><value>$this</value></data>
-  <data name="&gt;&gt;LangBtn.ZOrder"><value>1</value></data>
-  <data name="DataLbl.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>12, 87</value></data>
-  <data name="DataLbl.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>560, 323</value></data>
-  <data name="DataLbl.TabIndex" type="System.Resources.ResXNullRef, resgen, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null"><value /></data>
   <data name="DataLbl.Text"><value>...</value></data>
-  <data name="&gt;&gt;DataLbl.Name"><value>DataLbl</value></data>
-  <data name="&gt;&gt;DataLbl.Type"><value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
-  <data name="&gt;&gt;DataLbl.Parent"><value>$this</value></data>
-  <data name="&gt;&gt;DataLbl.ZOrder"><value>0</value></data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>7, 15</value></data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"><value>584, 461</value></data>
-  <data name="&gt;&gt;$this.Name"><value>MainForm</value></data>
-  <data name="&gt;&gt;$this.Type"><value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
   <data name="CPU"><value>CPU</value></data>
   <data name="Date"><value>Fecha de reporte</value></data>
   <data name="Disk"><value>Disco duro</value></data>

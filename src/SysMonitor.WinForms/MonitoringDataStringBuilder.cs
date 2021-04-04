@@ -15,30 +15,30 @@ namespace SysMonitor.WinForms
 
         public static string Build(MonitoringData data)
         {
-            //var resources = new ComponentResourceManager(typeof(MainForm));
+            var res = new ComponentResourceManager(typeof(MainForm));
             var ramUsagePercentage = (data.RamUsage / data.RamCapacity) * 100;
             var diskUsagePercentage = (data.DiskUsage / data.DiskCapacity) * 100;
 
             var stringBuilder = new StringBuilder()
-                .AppendJoin(" ", BulletChar, "Operative System")
+                .AppendJoin(" ", BulletChar, res.GetString("OperativeSystem"))
                 .AppendJoin(" ", ":", data.OsName)
                 .AppendLine()
-                .AppendJoin(" ", BulletChar, "Machine Name")
+                .AppendJoin(" ", BulletChar, res.GetString("MachineName"))
                 .AppendJoin(" ", ":", data.HostName)
                 .AppendLine()
-                .AppendJoin(" ", BulletChar, "IP Address")
+                .AppendJoin(" ", BulletChar, res.GetString("IpAddress"))
                 .AppendJoin(" ", ":", data.IpAddress)
                 .AppendLine()
-                .AppendJoin(" ", BulletChar, "Hard Disk")
+                .AppendJoin(" ", BulletChar, res.GetString("Disk"))
                 .AppendJoin(" ", ":", data.DiskCapacity.ToString("0.##"), "GB", "/", diskUsagePercentage.ToString("0.##"), "%")
                 .AppendLine()
-                .AppendJoin(" ", BulletChar, "RAM")
+                .AppendJoin(" ", BulletChar, res.GetString("Ram"))
                 .AppendJoin(" ", ":", data.RamCapacity.ToString("0.##"), "MB", "/", ramUsagePercentage.ToString("0.##"), "%")
                 .AppendLine()
-                .AppendJoin(" ", BulletChar, "CPU")
+                .AppendJoin(" ", BulletChar, res.GetString("CPU"))
                 .AppendJoin(" ", ":", data.CpuName, "/", data.CpuUsage.ToString("0.##"), "%")
                 .AppendLine()
-                .AppendJoin(" ", BulletChar, "Report Date")
+                .AppendJoin(" ", BulletChar, res.GetString("Date"))
                 .AppendJoin(" ", ":", data.DateCreated)
                 .AppendLine();
 
