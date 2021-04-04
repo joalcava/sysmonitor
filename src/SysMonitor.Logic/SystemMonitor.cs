@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using CsvHelper;
@@ -14,6 +15,24 @@ namespace SysMonitor.Logic
         public SystemMonitor(ISystemDataReader systemDataReader)
         {
             _dataReader = systemDataReader;
+        }
+
+        public static SystemMonitor Create()
+        {
+            ISystemDataReader systemDataReader;
+            switch (Environment.OSVersion.Platform)
+            {
+                case PlatformID.Win32NT:
+                    systemDataReader = new WindowsSystemDataReader();
+                    break;
+                case PlatformID.Unix:
+                    systemDataReader = new LinuxSystemDataReader();
+                    break;
+                default:
+                    throw new PlatformNotSupportedException();
+            }
+
+            return new SystemMonitor(systemDataReader);
         }
 
         public MonitoringData GetData()

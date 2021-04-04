@@ -26,7 +26,7 @@ namespace SysMonitor.WinForms
                     systemDataReader = new WindowsSystemDataReader();
                     break;
                 case PlatformID.Unix:
-                    systemDataReader = new UnixSystemDataReader();
+                    systemDataReader = new LinuxSystemDataReader();
                     break;
                 default:
                     throw new PlatformNotSupportedException();

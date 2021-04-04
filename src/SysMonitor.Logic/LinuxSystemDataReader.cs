@@ -6,13 +6,13 @@ using System.Threading;
 
 namespace SysMonitor.Logic
 {
-    public class UnixSystemDataReader : ISystemDataReader
+    public class LinuxSystemDataReader : ISystemDataReader
     {
         private readonly LinuxMemInfoReader _memInfoReaderReader;
         private readonly LinuxCpuInfoReader _cpuInfoReaderReader;
         private readonly DriveInfo[] _drivers;
 
-        public UnixSystemDataReader()
+        public LinuxSystemDataReader()
         {
             _drivers = DriveInfo.GetDrives();
             _memInfoReaderReader = new LinuxMemInfoReader();
